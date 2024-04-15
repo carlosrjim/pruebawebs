@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin:0; display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh}
+        img{width:50vw; height:30vw; object-fit:cover; margin:2vw;}
+        h1{color:gray; font-family:Arial}
+    </style>
+</head>
+
+<body>
+    <h1>Algunos paisajes chulos</h1>
+    <img src="c.webp" id="foto">
+    <div>
+        <button id="izquierda" onclick="funcIzqda()">Atrás</button>
+        <button id="derecha" onclick="funcDcha()">Siguiente</button>
+    </div>
+
+    <script>
+        let a = ["a.webp","b.webp","c.webp","d.webp","e.webp"];
+        let i = 2;
+    
+        function funcIzqda(){
+            if (i>0){
+            i--;
+            document.getElementById("foto").src=a[i];}
+        }
+        function funcDcha(){
+            if (i<4){
+            i++;
+            document.getElementById("foto").src=a[i];}
+        }
+    </script>
+</body>
+</html>

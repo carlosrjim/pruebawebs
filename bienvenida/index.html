@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin:0; height:100vh; width:100vw;
+            display: flex; justify-content: center; align-items: center;}
+        img{position:absolute; width:100vw; height:100vh; object-fit: cover; z-index:-1;}
+        a{text-decoration: none; font-size: 4rem; font-family: Arial; font-weight:bold; color: #fff;}
+    </style>
+</head>
+<body >
+    <a href="../actividad ampliación 1 (spotify)/prueba spotify (mejorada).html">Bienvenidos</a>
+    <img src="" id="eh"> <!--Estoy dando la ruta de la foto en JavaScript-->
+
+    <script>
+        let a = ["a.webp","b.webp","c.webp","d.webp","e.webp"];
+        cambiarImg();
+        function cambiarImg (){
+            let indiceAleatorio = Math.floor(Math.random()*a.length); 
+            document.getElementById("eh").src=a[indiceAleatorio];
+            setTimeout(cambiarImg,2000);
+        }
+        
+    </script>
+</body>
+</html>

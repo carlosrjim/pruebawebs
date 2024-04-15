@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{display:flex; justify-content:center;}
+        #contenedor{display:grid; grid-template-columns:1fr 1fr 1fr; width:90vw;}
+        .elemento{text-align:center;}
+        img{width:22vw; height:22vw; margin:2vw; object-fit:cover; border-radius: 10%;}
+        audio{width:22vw;}
+        @media screen and (max-width:600px){
+           #contenedor{grid-template-columns:1fr;}
+           img{width:60vw; height:60vw;}
+           audio{width:60vw;}
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div class="elemento">
+            <img src="images/505.webp" onclick="playSound1()">
+            <audio src="audio/505.mp3" id="audio1" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/daddy issues.webp" onclick="playSound2()">
+            <audio src="audio/daddy issues.mp3" id="audio2" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/hard gz.webp" onclick="playSound3()">
+            <audio src="audio/hard gz.mp3" id="audio3" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/rusowsky.webp" onclick="playSound4()">
+            <audio src="audio/rusowsky.mp3" id="audio4" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/milo j.webp" onclick="playSound5()">
+            <audio src="audio/milo j.mp3" id="audio5" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/nirvana.webp" onclick="playSound6()">
+            <audio src="audio/nirvana.mp3" id="audio6" controls loop></audio>
+        </div>
+    </div>
+  
+    <script>
+        function playSound1(){
+            let audio = document.getElementById("audio1");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound2(){
+            let audio = document.getElementById("audio2")
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound3(){
+            let audio = document.getElementById("audio3");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound4(){
+            let audio = document.getElementById("audio4")
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound5(){
+            let audio = document.getElementById("audio5");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound6(){
+            let audio = document.getElementById("audio6");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+    </script>
+</body>
+</html>
