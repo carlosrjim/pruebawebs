@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin:0; display:flex; align-items: center; justify-content: center; height:100vh}
+        #fondo{position: absolute; top:0; width:100vw; height:100vh; background-image: url("bartEmpty.webp"); 
+                background-size:contain; background-repeat: no-repeat; background-position: center; z-index: -1;}
+        h1{font-size: 2rem; color:white;}
+
+        @media screen and (min-width:600px) and (max-width:1400px){
+            h1{font-size: 1.1rem; color:white}
+        }
+
+        @media screen and (max-width:600px){
+            h1{font-size: 0.7rem; color:white}
+        }
+    </style>
+</head>
+<body>
+    <div id="fondo"></div>
+
+    <h1>
+    <script>
+        let a = prompt ("Escribe la frase que quieres repetir 20 veces");
+        let i = 0;
+        while (i<20){
+            document.write(a,"<br>");
+            i++;
+        }
+    </script>
+    </h1>
+</body>
+</html>
