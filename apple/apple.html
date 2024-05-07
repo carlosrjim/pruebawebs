@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0; font-family: arial;}
+        #encabezado{background-color: rgba(68, 68, 68, 0.9); min-height:4vh; display: flex; 
+                    justify-content: space-evenly; align-items: center; padding-left: 8%; 
+                    padding-right: 8%; position: fixed; width:100vw}
+        #oculto{display:none; width:100vw; height:20vh; background-color: black;}
+        #encabezado:hover{background-color:black; opacity:90%;}
+        #encabezado:hover #oculto {display:block; position:fixed; top:4vh; opacity: 90%;}
+        h1{font-size:3.5rem; line-height:0.5rem;}
+        h2{font-size:1.8rem; font-weight:lighter; line-height:0.5rem;}
+        h6{color:#FAFAFAff; font-family:Arial; font-weight:lighter; margin:0}
+        .enlaceazul{font-size:1.2rem; text-decoration:none; color:#307EBCff; margin-left: 2%; margin-right:2%;}
+        .divisionclara{min-height: 90vh; background-color:#F8F9F9ff; text-align:center; padding:5%; margin-bottom:1%;}
+        .divisionoscura{min-height: 80vh; background-color:black; text-align: center; padding:5%; color:white}
+        #fotoportatil{padding-top: 5%;}
+        @media only screen and (max-width:600px) {
+            #encabezado h6{display:none;} 
+            .divisionclara,.divisionoscura{min-height: 70vh; padding-top: 15vh;}
+            h1{font-size:2rem; line-height:2rem;} 
+            h2{font-size:1.2rem; line-height:1.2rem; position:relative; top:-1rem}
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="encabezado">
+        <img src="manzana b.png" width="20px">
+        <h6>Tienda</h6>
+        <h6>Mac</h6>
+        <h6>iPad</h6>
+        <h6>iPhone</h6>
+        <h6>Watch</h6>
+        <h6>AirPods</h6>
+        <h6>TV y Casa</h6>
+        <h6>Entretenimiento</h6>
+        <h6>Accesorios</h6>
+        <h6>Soporte</h6>
+        <img src="lupa b.png" width="20px">
+        <img src="compras b.png" width="20px">
+        <div id="oculto"></div> 
+    </div>
+    <div class="divisionclara">
+        <h1>MacBook Pro</h1>
+        <h2>Una belleza salvaje.</h2>
+        <a class="enlaceazul" href="https://www.apple.com/es/macbook-pro/">Más información ></a>
+        <a class="enlaceazul" href="https://www.apple.com/es/shop/buy-mac/macbook-pro">Comprar ></a>
+        <a href="https://www.apple.com/es/macbook-pro/">
+            <img id="fotoportatil" src="imagen portatil.JPG" width="98%">
+        </a> 
+    </div>
+    <div class="divisionclara">
+        <h1>iMac</h1>
+        <h2>Un cambio de chip bestial.</h2>
+        <a class="enlaceazul" href="https://www.apple.com/es/imac/">Más información ></a>
+        <a class="enlaceazul" href="https://www.apple.com/es/shop/buy-mac/imac">Comprar ></a>
+        <a href="https://www.apple.com/es/imac/">
+            <img id="fotoportatil" src="imac.JPG" width="95%">
+        </a> 
+    </div>
+
+    <div class="divisionoscura">
+        <h1>iPhone 15 Pro</h1>
+        <h2>Titanio. Tan robusto. Tan ligero. Tan Pro.</h2>
+        <a class="enlaceazul" href="https://www.apple.com/es/iphone-15-pro/">Más información ></a>
+        <a class="enlaceazul" href="https://www.apple.com/es/shop/buy-iphone/iphone-15-pro">Comprar ></a>
+        <a href="https://www.apple.com/es/iphone-15-pro/">
+            <img id="fotoportatil" src="iphone 15.JPG" width="95%">
+        </a> 
+    </div>
+          
+    
+</body>
+</html>
